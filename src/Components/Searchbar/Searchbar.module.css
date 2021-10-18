@@ -1,3 +1,6 @@
+/*
+ * Стили компонента Searchbar
+ */
 .Searchbar {
   top: 0;
   left: 0;
@@ -17,6 +20,9 @@
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
 }
 
+/*
+   * Стили компонента SearchForm
+   */
 .SearchForm {
   display: flex;
   align-items: center;
@@ -27,7 +33,7 @@
   overflow: hidden;
 }
 
-.SearchForm__button {
+.SearchForm_button {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -42,11 +48,11 @@
   outline: none;
 }
 
-.SearchForm__button:hover {
+.SearchForm_button:hover {
   opacity: 1;
 }
 
-.SearchForm__buttonLabel {
+.SearchForm_button_label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -58,7 +64,7 @@
   border: 0;
 }
 
-.SearchForm__input {
+.SearchForm_input {
   display: inline-block;
   width: 100%;
   font: inherit;
@@ -69,7 +75,7 @@
   padding-right: 4px;
 }
 
-.SearchForm__input::placeholder {
+.SearchForm_input::placeholder {
   font: inherit;
   font-size: 18px;
 }
