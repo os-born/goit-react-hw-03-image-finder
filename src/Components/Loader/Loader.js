@@ -7,10 +7,10 @@ function LoaderComponent() {
     <div className={styles.Overlay}>
       <Loader
         type="ThreeDots"
-        color="#00BFFF"
-        height={100}
+        color="#3f51b5"
+        height={80}
         width={100}
-        timeout={0}
+        timeout={1000}
       />
     </div>
   );

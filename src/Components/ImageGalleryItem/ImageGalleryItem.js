@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./GalleryImageItem.module.css";
+import styles from "./ImageGalleryItem.module.css";
 
 function ImageGalleryItem({ webformatURL, largeImageURL, tags, onOpenModal }) {
   return (

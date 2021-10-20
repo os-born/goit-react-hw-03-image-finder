@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./Button.module.css";
+import s from "./Button.module.css";
 
 function Button({ onLoadMore }) {
   return (
-    <div className={styles.Button_wrapper}>
-      <button type="button" className={styles.Button} onClick={onLoadMore}>
+    <div className={s.Button_wrapper}>
+      <button type="button" className={s.Button} onClick={onLoadMore}>
         Load more
       </button>
     </div>

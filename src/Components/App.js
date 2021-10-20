@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import fetchImages from "../services/images/ApiPics";
-import Container from "./Container/Container";
-import Searchbar from "./Searchbar/Searchbar";
-import ImageGallery from "./GalleryImage/GalleryImage";
+import fetchImages from "../services/images/ApiImg";
+import Container from "./Container";
+import Searchbar from "./Searchbar";
+import ImageGallery from "./ImageGallery";
 import Button from "./Button/Button";
-import LoaderComponent from "./Loader/Loader";
-import Modal from "./Modal/Modal";
-import ErrorComponent from "./Error/Error";
+import LoaderComponent from "./Loader";
+import Modal from "./Modal";
+import ErrorComponent from "./Error";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { animateScroll as scroll } from "react-scroll";
@@ -29,12 +29,12 @@ class App extends Component {
     }
   }
 
-  handleChange = (event) => {
-    this.setState({ query: event.target.value });
+  handleChange = (e) => {
+    this.setState({ query: e.target.value });
   };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
+  handleSubmit = (e) => {
+    e.preventDefault();
     this.renderImages();
   };
 
@@ -59,10 +59,10 @@ class App extends Component {
         page: page + 1,
       }));
       if (request.length === 0) {
-        this.setState({ error: `No results were found for ${query}!` });
+        this.setState({ error: `No results found for ${query}!` });
       }
     } catch (error) {
-      this.setState({ error: "Something went wrong. Try again." });
+      this.setState({ error: "Something wrong. Try again." });
     } finally {
       this.toggleLoader();
     }

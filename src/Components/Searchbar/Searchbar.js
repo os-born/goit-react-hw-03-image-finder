@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "./Searchbar.module.css";
+import s from "./Searchbar.module.css";
 
 function Searchbar({ onHandleSubmit, onHandleChangeQuery, query }) {
   return (
-    <header className={styles.Searchbar}>
-      <form className={styles.SearchForm} onSubmit={onHandleSubmit}>
-        <button type="submit" className={styles.SearchForm_button}>
-          <span className={styles.SearchForm_button_label}>Search</span>
+    <header className={s.Searchbar}>
+      <form className={s.SearchForm} onSubmit={onHandleSubmit}>
+        <button type="submit" className={s.SearchForm_button}>
+          <span className={s.SearchForm_button_label}>Search</span>
         </button>
 
         <input
-          className={styles.SearchForm_input}
+          className={s.SearchForm_input}
           type="text"
           autoComplete="off"
           autoFocus

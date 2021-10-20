@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styles from "./Modal.module.css";
-
-// const modalRoot = document.querySelector('#modal-root');
+import s from "./Modal.module.css";
 
 class Modal extends Component {
   componentDidMount() {
@@ -30,8 +28,8 @@ class Modal extends Component {
 
     return (
       <>
-        <div className={styles.Overlay} onClick={this.handleBackdropClick}>
-          <div className={styles.Modal}>
+        <div className={s.Overlay} onClick={this.handleBackdropClick}>
+          <div className={s.Modal}>
             <img src={largeImageURL} alt="" />
           </div>
         </div>
